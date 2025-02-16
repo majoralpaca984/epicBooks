@@ -1,0 +1,8 @@
+body {
+    background-color: rgba(188, 181, 181, 0.237)
+  }
+
+  .selected {
+    border: 3px solid rgb(183, 14, 149);
+  }
+  
