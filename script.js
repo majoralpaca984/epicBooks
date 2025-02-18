@@ -78,13 +78,7 @@ const urlBooks = "https://striveschool-api.herokuapp.com/books"
       })
     }
     
-
-    function addToCart(bookId, card) {
-      console.log("Aggiunto libro: " + bookId)
-      card.classList.add("selected")
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', () => {
       fetchBooks()
       const searchInput = document.getElementById('searchInput')
       searchInput.addEventListener('input', () => {
@@ -96,3 +90,4 @@ const urlBooks = "https://striveschool-api.herokuapp.com/books"
         renderBooks(filteredBooks)
       })
     })
+

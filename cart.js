@@ -20,6 +20,19 @@ function renderCart() {
   });
 }
 
+function addToCart(bookId, card) {
+  console.log("Aggiunto libro: " + bookId);
+  // Cerca il libro in allBooks e lo aggiunge all'array cart, se non è già presente (a seconda della logica che preferisci)
+  const book = allBooks.find(b => b.asin === bookId);
+  if (book && !cart.find(b => b.asin === bookId)) {
+    cart.push(book);
+  }
+  card.classList.add("selected");
+  renderCart(); // Aggiorna la visualizzazione del carrello
+}
+
+
+
 //  per rimuovere libro dal carrello
 function removeFromCart(bookId) {
   const index = cart.findIndex(book => book.asin === bookId);
