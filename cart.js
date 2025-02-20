@@ -28,8 +28,7 @@ function addToCart(bookId, card) {
     cart.push(book);
   }
   card.classList.add("selected");
-  renderCart(); // Aggiorna la visualizzazione del carrello
-}
+  renderCart(); 
 
 
 
