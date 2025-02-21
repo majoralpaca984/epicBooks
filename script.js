@@ -66,6 +66,7 @@ const urlBooks = "https://striveschool-api.herokuapp.com/books"
         buttonDetails.addEventListener('click', () => {
           console.log("Salta: " + book.title)
         })
+
     
         cardFooter.appendChild(buttonCart)
         cardFooter.appendChild(buttonDetails)
